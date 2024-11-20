@@ -35,7 +35,7 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">LinkedIn</p>
                   <a 
-                    href="https://linkedin.com/in/ali-said-errahmani" 
+                    href="https://www.linkedin.com/in/ali-said-errahmani-a41ba1295/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-blue-600"

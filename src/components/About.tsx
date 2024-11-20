@@ -15,7 +15,7 @@ const About = () => {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          About Me
+          A Propos De Moi
         </h2>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
           Passionné par le développement web, voici les compétences que j'ai
@@ -27,7 +27,7 @@ const About = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Globe className="text-blue-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
+            <h3 className="text-xl font-semibold mb-2">Développement Frontend</h3>
             <p className="text-gray-600">
               En tant que développeur frontend débutant, je me spécialise dans
               la création d'interfaces utilisateur réactives et intuitives en

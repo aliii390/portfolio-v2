@@ -31,11 +31,11 @@ const Header = () => {
                 className="text-gray-600 hover:text-blue-600 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/in/ali-said-errahmani" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/ali-said-errahmani-a41ba1295/" target="_blank" rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:ali.said.errahmani@gmail.com" 
+              <a href="mailto:alli.said.errahmani@gmail.com" 
                 className="text-gray-600 hover:text-blue-600 transition-colors">
                 <Mail size={20} />
               </a>
