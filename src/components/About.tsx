@@ -1,19 +1,25 @@
-import React from 'react';
-import { Code, Database, Globe } from 'lucide-react';
+import React from "react";
+import { Code, Database, Globe } from "lucide-react";
 
 const About = () => {
   const skills = [
-    { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express.js', 'MongoDB', 'SQL'] },
-    { category: 'Tools', items: ['Git', 'VS Code', 'Postman', 'Figma'] },
+    {
+      category: "Frontend",
+      items: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+    },
+    { category: "Backend", items: ["Node.js", "Express.js", "MongoDB", "SQL"] },
+    { category: "Tools", items: ["Git", "VS Code", "Postman", "Figma"] },
   ];
 
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">About Me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          About Me
+        </h2>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-        Passionné par le développement web, voici les compétences que j'ai acquises.        
+          Passionné par le développement web, voici les compétences que j'ai
+          acquises.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -23,7 +29,9 @@ const About = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
             <p className="text-gray-600">
-              Creating responsive and intuitive user interfaces with modern web technologies.
+              En tant que développeur frontend débutant, je me spécialise dans
+              la création d'interfaces utilisateur réactives et intuitives en
+              utilisant les technologies web modernes.
             </p>
           </div>
           <div className="text-center p-6">
@@ -32,7 +40,8 @@ const About = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
             <p className="text-gray-600">
-              Writing maintainable, efficient, and well-documented code following best practices.
+              Writing maintainable, efficient, and well-documented code
+              following best practices.
             </p>
           </div>
           <div className="text-center p-6">
@@ -41,7 +50,8 @@ const About = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">Backend Integration</h3>
             <p className="text-gray-600">
-              Building robust APIs and managing databases for full-stack applications.
+              Building robust APIs and managing databases for full-stack
+              applications.
             </p>
           </div>
         </div>
@@ -49,7 +59,9 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((skillSet) => (
             <div key={skillSet.category} className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">{skillSet.category}</h3>
+              <h3 className="text-xl font-semibold mb-4">
+                {skillSet.category}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {skillSet.items.map((skill) => (
                   <span
