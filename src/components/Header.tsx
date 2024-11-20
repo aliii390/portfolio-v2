@@ -15,13 +15,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Home
+              Acceuil
             </a>
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
-              About
+              A Propos
             </a>
             <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Projects
+              Projets
             </a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
               Contact
@@ -55,13 +55,13 @@ const Header = () => {
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4">
             <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Home
+              Acceuil
             </a>
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
-              About
+              A Propos
             </a>
             <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Projects
+              Projets
             </a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
               Contact

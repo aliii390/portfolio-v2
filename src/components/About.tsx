@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Code, Database, Globe } from "lucide-react";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
       items: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
     },
     { category: "Backend", items: ["Node.js", "Express.js", "MongoDB", "SQL"] },
-    { category: "Tools", items: ["Git", "VS Code", "Postman", "Figma"] },
+    { category: "Tools", items: ["Git", "VS Code",  "Figma"] },
   ];
 
   return (

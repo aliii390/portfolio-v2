@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import aliImage from './image/ali.png';
 import { TypeAnimation } from "react-type-animation";
 import { ArrowDown } from "lucide-react";
 
@@ -10,7 +11,7 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 py-20 text-center">
         <img
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces"
+        src={aliImage}
           alt="Ali SAID ERRAHMANI"
           className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg"
         />
@@ -24,7 +25,7 @@ const Hero = () => {
               2000,
               "Bienvenue ",
               2000,
-              "Sur mon portfolio",
+              "Sur mon portfolio :)",
               2000,
             ]}
             repeat={Infinity}
