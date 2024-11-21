@@ -6,11 +6,13 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
+    
       <Header />
-      <main>
+      <main >
         <Hero />
         <About />
         <Projects />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -41,6 +42,8 @@ const Header = () => {
               </a>
             </div>
           </nav>
+
+          
          
 
           {/* Mobile Menu Button */}

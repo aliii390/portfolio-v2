@@ -38,20 +38,18 @@ const About = () => {
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Code className="text-blue-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
+            <h3 className="text-xl font-semibold mb-2">Code propre</h3>
             <p className="text-gray-600">
-              Writing maintainable, efficient, and well-documented code
-              following best practices.
+            Rédaction de code maintenable, efficace et bien documenté selon les meilleures pratiques
             </p>
           </div>
           <div className="text-center p-6">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Database className="text-blue-600" size={32} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Backend Integration</h3>
+            <h3 className="text-xl font-semibold mb-2">Intégration back-end</h3>
             <p className="text-gray-600">
-              Building robust APIs and managing databases for full-stack
-              applications.
+            Créer des API robustes et gérer des bases de données pour les applications full-stack
             </p>
           </div>
         </div>

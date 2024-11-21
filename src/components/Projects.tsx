@@ -35,8 +35,8 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gray">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl text-white md:text-4xl font-bold text-center mb-4">Mes projets</h2>
-        <p className="text-white text-center max-w-2xl mx-auto mb-12">
+        <h2 className="text-3xl text-black md:text-4xl font-bold text-center mb-4">Mes projets</h2>
+        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
       Voici quelques-uns de mes récents projets. Tous ces éléments sont open source et disponibles sur GitHub.      
         </p>
 
