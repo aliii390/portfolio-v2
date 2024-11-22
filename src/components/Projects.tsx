@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ExternalLink, Github, Star } from 'lucide-react';
 
+
 interface Repository {
   owner: string;
   repo: string;
@@ -33,6 +34,16 @@ const Projects = () => {
     fetchRepos();
   }, []);
 
+  const projectImages = document.querySelectorAll('.projets');
+  
+
+  projectImages?.forEach((image) => {
+    console.log(image);
+    
+  })
+  
+  // js pour les images
+
   return (
     <section id="projects" className="py-20 bg-gray">
       <div className="container mx-auto px-4">
@@ -41,14 +52,16 @@ const Projects = () => {
       Voici quelques-uns de mes récents projets. Tous ces éléments sont open source et disponibles sur GitHub.      
         </p>
 
+{/* if ? else : */}
+
         {loading ? (
           <div className="flex justify-center items-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {repos.map((repo) => (
-              <div key={repo.repo} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+              <article key={repo.repo} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold text-gray-800">
                     {repo.repo}
@@ -60,21 +73,16 @@ const Projects = () => {
                     </span>
                   </div>
                 </div>
-                {/* <p className="text-gray-600 mb-4 line-clamp-2">
-                  {repo.description || 'No description available'}
-                </p> */}
-                {/* {repo.topics.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {repo.topics.map((topic) => (
-                      <span 
-                        key={topic}
-                        className="px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-600"
-                      >
-                        {topic}
-                      </span>
-                    ))}
-                  </div>
-                )} */}
+
+
+                {/* partie image */}
+
+                <div className='w-[400px] h-[250px] mb-3 border flex items-center justify-center overflow-hidden'>
+                  <img  alt="" className='projets' />
+                </div>
+               
+            {/* && = if */}
+
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-gray-600">
@@ -82,6 +90,7 @@ const Projects = () => {
                     </span>
                   </div>
                 )}
+                
                 <div className="flex gap-4">
                   <a
                     href={repo.link}
@@ -92,21 +101,11 @@ const Projects = () => {
                     <Github size={16} className="mr-1" />
                     Code
                   </a>
-                  {/* {repo.homepage && (
-                    <a
-                      href={repo.homepage}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      <ExternalLink size={16} className="mr-1" />
-                      Live Demo
-                    </a>
-                  )} */}
+                
                 </div>
-              </div>
+              </article>
             ))}
-          </div>
+          </section>
         )}
       </div>
     </section>

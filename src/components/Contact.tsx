@@ -1,6 +1,7 @@
 
 import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
 
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
