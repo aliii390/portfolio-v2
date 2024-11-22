@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { ExternalLink, Github, Star } from 'lucide-react';
 
 interface Repository {
-  id: number;
-  name: string;
-  description: string;
-  html_url: string;
-  homepage: string;
-  stargazers_count: number;
-  topics: string[];
-  language: string;
+  owner: string;
+  repo: string;
+  link: string;
+  image: string;
+  website: string;
+  language : string;
+  languageColor : string;
+  stars : number;
+  forks : number;
 }
 
 const Projects = () => {
@@ -19,7 +20,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/aliii390/repos?sort=updated');
+        const response = await fetch('https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=aliii390');    
         const data = await response.json();
         setRepos(data);
       } catch (error) {
@@ -47,22 +48,22 @@ const Projects = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {repos.map((repo) => (
-              <div key={repo.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+              <div key={repo.repo} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold text-gray-800">
-                    {repo.name}
+                    {repo.repo}
                   </h3>
                   <div className="flex items-center gap-2">
                     <span className="flex items-center text-gray-600">
                       <Star size={16} className="mr-1" />
-                      {repo.stargazers_count}
+                      {repo.stars}
                     </span>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4 line-clamp-2">
+                {/* <p className="text-gray-600 mb-4 line-clamp-2">
                   {repo.description || 'No description available'}
-                </p>
-                {repo.topics.length > 0 && (
+                </p> */}
+                {/* {repo.topics.length > 0 && (
                   <div className="flex flex-wrap gap-2 mb-4">
                     {repo.topics.map((topic) => (
                       <span 
@@ -73,17 +74,17 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                )}
+                )} */}
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-gray-600">
-                      Built with <span className="font-semibold">{repo.language}</span>
+                      Codez en <span className="font-semibold">{repo.language}</span>
                     </span>
                   </div>
                 )}
                 <div className="flex gap-4">
                   <a
-                    href={repo.html_url}
+                    href={repo.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
@@ -91,7 +92,7 @@ const Projects = () => {
                     <Github size={16} className="mr-1" />
                     Code
                   </a>
-                  {repo.homepage && (
+                  {/* {repo.homepage && (
                     <a
                       href={repo.homepage}
                       target="_blank"
@@ -101,7 +102,7 @@ const Projects = () => {
                       <ExternalLink size={16} className="mr-1" />
                       Live Demo
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}

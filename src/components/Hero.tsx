@@ -55,7 +55,7 @@ const Hero = () => {
           href="#about"
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
-          <ArrowDown className="text-gray-400" size={32} />
+          <ArrowDown className="text-gray-400 " size={32} />
         </a>
       </div>
     </section>

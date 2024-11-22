@@ -1,17 +1,17 @@
-import React from 'react';
+
 import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 ">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Entrer en contact</h2>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
         Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !
         </p>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:ml-[8%] sm:flex  sm:ml-[25%]">
+          <div className="bg-white rounded-lg shadow-md p-8 md:w-[90%] md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-4">
               <div className="flex items-center">
@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-8">
+          {/* <div className="bg-white rounded-lg shadow-md p-8">
             <h3 className="text-2xl font-semibold mb-6">envoyer un message</h3>
             <form className="space-y-4">
               <div>
@@ -104,7 +104,7 @@ const Contact = () => {
                 Envoyer
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
