@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ExternalLink, Github, Star } from 'lucide-react';
+import { Github, Star } from 'lucide-react';
+
+// ExternalLink,
 
 
 interface Repository {
