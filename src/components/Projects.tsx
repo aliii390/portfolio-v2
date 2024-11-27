@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
 import aliImage from "./image/ali.png";
 import freezeImage from "./image/freeze1.png";
-import aliPortfolioImage from "./image/Ali_portfolio.png";
+import aliPortfolioImage from "./image/test.png";
+
 
 // ExternalLink,
 
@@ -33,6 +34,7 @@ const Projects = () => {
         datas.forEach((data) => {
           if (data.repo === "Ali-Portfolio") {
             data.image = aliPortfolioImage;
+            data.website = "https://aliii390.github.io/Ali-Portfolio/";
           }
 
           if (data.repo === "assistant-vocal") {
@@ -102,8 +104,14 @@ const Projects = () => {
 
                 {/* partie image */}
 
-                <div className="w-[200px] h-[250px] mb-3 border flex items-center justify-center overflow-hidden">
-                  <img src={repo.image} alt="" className="projets" />
+                <div className="w-full h-[250px] mb-3 border flex items-center justify-center overflow-hidden group relative">
+                  <a href={repo.website}>
+                    <img
+                      src={repo.image}
+                      alt=""
+                      className="absolute top-0 left-0 w-full h-auto group-hover:animate-scroll "
+                    />
+                  </a>
                 </div>
 
                 {/* && = if */}
@@ -119,7 +127,7 @@ const Projects = () => {
 
                 <div className="flex gap-4">
                   <a
-                    href={repo.link}
+                    href={repo.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
