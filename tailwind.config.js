@@ -6,11 +6,13 @@ export default {
       keyframes: {
         scroll: {
           "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(-100%)" },
+          "66%": { transform: "translateY(-66%)" },
         },
       },
       animation: {
-        scroll: "scroll 8s linear infinite", 
+        scroll: "scroll 8s linear infinite",   //animate-[state] ou bien scroll: "none"; mais sa arrete l'animation avant quelle commence  ou bien"paused" jsp encore 2eme solution"slideIn 1.2s ease-in-out forwards"
+       
+        
       },
     },
   },

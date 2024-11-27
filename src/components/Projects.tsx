@@ -109,7 +109,7 @@ const Projects = () => {
                     <img
                       src={repo.image}
                       alt=""
-                      className="absolute top-0 left-0 w-full h-auto group-hover:animate-scroll "
+                      className="absolute top-0 left-0 w-full h-auto group-hover:animate-scroll"
                     />
                   </a>
                 </div>
