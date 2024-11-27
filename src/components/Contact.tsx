@@ -20,14 +20,14 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Email</p>
                   <a href="mailto:ali.said.errahmani@gmail.com" className="text-gray-600 hover:text-blue-600">
-                    ali.said.errahmani@gmail.com
+                    alli.said.errahmani@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-center">
                 <MapPin className="text-blue-600 mr-4" size={24} />
                 <div>
-                  <p className="font-medium">Location</p>
+                  <p className="font-medium">Localisation</p>
                   <p className="text-gray-600">Saint Etienne, France</p>
                 </div>
               </div>

@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Github, Star } from 'lucide-react';
-import ddata from "./data.json";
-//  import aliImage from './image/ali.png';
-// import freezeImage from './image/freeze1.png';
-// import robbotImage from './image/image3.png';
-
+import React, { useEffect, useState } from "react";
+import { Github, Star } from "lucide-react";
+import aliImage from "./image/ali.png";
+import freezeImage from "./image/freeze1.png";
+import aliPortfolioImage from "./image/Ali_portfolio.png";
 
 // ExternalLink,
-
 
 interface Repository {
   owner: string;
@@ -15,10 +12,10 @@ interface Repository {
   link: string;
   image: string;
   website: string;
-  language : string;
-  languageColor : string;
-  stars : number;
-  forks : number;
+  language: string;
+  languageColor: string;
+  stars: number;
+  forks: number;
 }
 
 const Projects = () => {
@@ -28,12 +25,28 @@ const Projects = () => {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch('https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=aliii390');    
-        const data = await response.json();
-     
-        setRepos(data);
+        const response = await fetch(
+          "https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=aliii390"
+        );
+        const datas = await response.json();
+
+        datas.forEach((data) => {
+          if (data.repo === "Ali-Portfolio") {
+            data.image = aliPortfolioImage;
+          }
+
+          if (data.repo === "assistant-vocal") {
+            data.image = freezeImage;
+          }
+
+          if (data.repo === "QR-Code") {
+            data.image = aliImage;
+          }
+        });
+
+        setRepos(datas);
       } catch (error) {
-        console.error('Error fetching repos:', error);
+        console.error("Error fetching repos:", error);
       } finally {
         setLoading(false);
       }
@@ -42,31 +55,27 @@ const Projects = () => {
     fetchRepos();
   }, []);
 
-
   // js pour les images
 
-  const projectImages = document.querySelectorAll('.projets');
-  
+  // const projectImages = document.querySelectorAll('.projets');
 
-  projectImages?.forEach((image) => {
-    console.log(image);
-    
-    
-  })
-  
+  // projectImages?.forEach((image) => {
+  //   console.log(image);
 
-
-
+  // })
 
   return (
-    <section id="projects" className="py-20 bg-gray">
+    <section id="projects" className="py-20 bg-gray ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl text-black md:text-4xl font-bold text-center mb-4">Mes projets</h2>
+        <h2 className="text-3xl text-black md:text-4xl font-bold text-center mb-4">
+          Mes projets
+        </h2>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-      Voici quelques-uns de mes récents projets. Tous ces éléments sont open source et disponibles sur GitHub.      
+          Voici quelques-uns de mes récents projets. Tous ces éléments sont open
+          source et disponibles sur GitHub.
         </p>
 
-{/* if ? else : */}
+        {/* if ? else : */}
 
         {loading ? (
           <div className="flex justify-center items-center h-64">
@@ -75,7 +84,10 @@ const Projects = () => {
         ) : (
           <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {repos.map((repo) => (
-              <article key={repo.repo} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+              <article
+                key={repo.repo}
+                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6  "
+              >
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold text-gray-800">
                     {repo.repo}
@@ -88,24 +100,23 @@ const Projects = () => {
                   </div>
                 </div>
 
-
                 {/* partie image */}
 
-                <div className='w-[400px] h-[250px] mb-3 border flex items-center justify-center overflow-hidden'>
-                  <img  src={repo.image} alt="" className='projets' />
-                
+                <div className="w-[200px] h-[250px] mb-3 border flex items-center justify-center overflow-hidden">
+                  <img src={repo.image} alt="" className="projets" />
                 </div>
-               
-            {/* && = if */}
+
+                {/* && = if */}
 
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-gray-600">
-                      Codez en <span className="font-semibold">{repo.language}</span>
+                      Codez en{" "}
+                      <span className="font-semibold">{repo.language}</span>
                     </span>
                   </div>
                 )}
-                
+
                 <div className="flex gap-4">
                   <a
                     href={repo.link}
@@ -116,7 +127,6 @@ const Projects = () => {
                     <Github size={16} className="mr-1" />
                     Code
                   </a>
-                
                 </div>
               </article>
             ))}
