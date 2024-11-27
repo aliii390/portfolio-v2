@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Github, Star } from 'lucide-react';
+import ddata from "./data.json";
+//  import aliImage from './image/ali.png';
+// import freezeImage from './image/freeze1.png';
+// import robbotImage from './image/image3.png';
+
 
 // ExternalLink,
 
@@ -25,6 +30,7 @@ const Projects = () => {
       try {
         const response = await fetch('https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=aliii390');    
         const data = await response.json();
+     
         setRepos(data);
       } catch (error) {
         console.error('Error fetching repos:', error);
@@ -36,15 +42,21 @@ const Projects = () => {
     fetchRepos();
   }, []);
 
+
+  // js pour les images
+
   const projectImages = document.querySelectorAll('.projets');
   
 
   projectImages?.forEach((image) => {
     console.log(image);
     
+    
   })
   
-  // js pour les images
+
+
+
 
   return (
     <section id="projects" className="py-20 bg-gray">
@@ -80,7 +92,8 @@ const Projects = () => {
                 {/* partie image */}
 
                 <div className='w-[400px] h-[250px] mb-3 border flex items-center justify-center overflow-hidden'>
-                  <img  alt="" className='projets' />
+                  <img  src={repo.image} alt="" className='projets' />
+                
                 </div>
                
             {/* && = if */}

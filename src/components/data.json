@@ -1,0 +1,64 @@
+[
+    {
+        "owner": "aliii390",
+        "repo": "Ali-Portfolio",
+        "link": "https://github.com/aliii390/Ali-Portfolio",
+        "image": "https://opengraph.githubassets.com/1/aliii390/Ali-Portfolio",
+        "website": "https://aliii390.github.io/Ali-Portfolio/",
+        "language": "HTML",
+        "languageColor": "#e34c26",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "aliii390",
+        "repo": "assistant-vocal",
+        "link": "https://github.com/aliii390/assistant-vocal",
+        "image": "https://opengraph.githubassets.com/1/aliii390/assistant-vocal",
+        "language": "CSS",
+        "languageColor": "#563d7c",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "aliii390",
+        "repo": "QR-Code",
+        "link": "https://github.com/aliii390/QR-Code",
+        "image": "https://opengraph.githubassets.com/1/aliii390/QR-Code",
+        "language": "CSS",
+        "languageColor": "#563d7c",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "aliii390",
+        "repo": "js-fizzbuzz",
+        "link": "https://github.com/aliii390/js-fizzbuzz",
+        "description": "1, 2, Fizz, 3, Buzz, Fizz",
+        "image": "https://opengraph.githubassets.com/1/aliii390/js-fizzbuzz",
+        "language": "JavaScript",
+        "languageColor": "#f1e05a",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "aliii390",
+        "repo": "exo-animationCSS",
+        "link": "https://github.com/aliii390/exo-animationCSS",
+        "image": "https://opengraph.githubassets.com/1/aliii390/exo-animationCSS",
+        "language": "CSS",
+        "languageColor": "#563d7c",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "aliii390",
+        "repo": "phishing",
+        "link": "https://github.com/aliii390/phishing",
+        "image": "https://opengraph.githubassets.com/1/aliii390/phishing",
+        "language": "Python",
+        "languageColor": "#3572A5",
+        "stars": 0,
+        "forks": 0
+    }
+]
