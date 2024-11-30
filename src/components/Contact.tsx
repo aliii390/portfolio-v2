@@ -11,8 +11,8 @@ const Contact = () => {
         Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !
         </p>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:flex md:ml-[8%] sm:flex  sm:ml-[25%]">
-          <div className="bg-white rounded-lg shadow-md p-8 md:w-[90%] md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center">
+        <div className="max-w-4xl mx-auto grid grid-cols-1  md:grid-cols-2 gap-8 md:flex md:ml-[8%] sm:flex  sm:ml-[25%] 2xl:ml-[20%]">
+          <div className="bg-white rounded-lg shadow-md p-8 md:w-[90%] md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center ">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-4">
               <div className="flex items-center">
