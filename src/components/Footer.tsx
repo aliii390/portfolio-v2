@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 mb-4 md:mb-0">
-            © {new Date().getFullYear()} Ali SAID ERRAHMANI. All rights reserved.
+            © {new Date().getFullYear()} Ali SAID ERRAHMANI. Portfolio
           </p>
           <p className="flex items-center text-gray-600">
-            Made with <Heart className="text-red-500 mx-1" size={16} /> using React & Tailwind
+              Merci de votre visite !
           </p>
         </div>
       </div>

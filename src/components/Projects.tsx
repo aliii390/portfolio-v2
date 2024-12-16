@@ -44,6 +44,9 @@ const Projects = () => {
           if (data.repo === "QR-Code") {
             data.image = aliImage;
           }
+          
+
+
         });
 
         setRepos(datas);

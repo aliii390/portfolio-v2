@@ -5,10 +5,10 @@ const About = () => {
   const skills = [
     {
       category: "Frontend",
-      items: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
+      items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
-    { category: "Backend", items: ["Node.js", "Express.js", "MongoDB", "SQL"] },
-    { category: "Tools", items: ["Git", "VS Code",  "Figma"] },
+    { category: "Backend", items: ["MySql", "PhpMyAdmin"  ,"SQL"] },
+    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello"] },
   ];
 
   return (
