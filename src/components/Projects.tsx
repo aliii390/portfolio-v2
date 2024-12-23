@@ -3,6 +3,7 @@ import { Github, Star } from "lucide-react";
 import aliImage from "./image/ali.png";
 import freezeImage from "./image/freeze1.png";
 import aliPortfolioImage from "./image/test.png";
+import tpTailwind from "./image/tp-tailwind.jpg";
 
 
 // ExternalLink,
@@ -45,7 +46,10 @@ const Projects = () => {
             data.image = aliImage;
           }
           
-
+          if(data.repo === "TP-tailwindcss"){
+            data.image = tpTailwind;
+            data.website = " https://aliii390.github.io/TP-tailwindcss/";
+          }
 
         });
 
