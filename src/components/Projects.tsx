@@ -43,7 +43,7 @@ const Projects = () => {
           }
 
           if (data.repo === "QR-Code") {
-            data.image = aliImage;
+            data.image = tpTailwind;
           }
           
           if(data.repo === "TP-tailwindcss"){

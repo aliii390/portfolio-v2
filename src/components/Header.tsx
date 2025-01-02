@@ -16,7 +16,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Acceuil
+            Accueil
             </a>
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
               A Propos
@@ -59,7 +59,7 @@ const Header = () => {
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4">
             <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Acceuil
+            Accueil
             </a>
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
               A Propos
