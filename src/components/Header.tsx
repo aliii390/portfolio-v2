@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="fixed w-full from-blue-400 via-sky-300 to-cyan-500 backdrop-brightness-95-sm z-50 shadow-sm">
+    <header className="fixed w-full backdrop-blur-xl  z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold text-slate-200">
