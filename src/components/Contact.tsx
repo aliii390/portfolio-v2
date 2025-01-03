@@ -4,10 +4,10 @@ import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 via-blue-800 to-gray-900">
       <div className="container mx-auto px-4 ">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Entrer en contact</h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <h2 className="text-3xl text-slate-200  md:text-4xl font-bold text-center mb-4">Entrer en contact</h2>
+        <p className="text-slate-200 text-center max-w-2xl mx-auto mb-12">
         Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !
         </p>
 

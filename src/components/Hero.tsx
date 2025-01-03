@@ -13,7 +13,7 @@ const Hero = () => {
         <img
         src={aliImage}
           alt="Ali SAID ERRAHMANI"
-          className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg"
+          className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg hover:scale-110 transition-transform"
         />
         <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-4">
           Ali SAID ERRAHMANI

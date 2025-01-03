@@ -7,8 +7,8 @@ const About = () => {
       category: "Frontend",
       items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
-    { category: "Backend", items: ["MySql", "PhpMyAdmin"  ,"SQL"] },
-    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello"] },
+    { category: "Backend", items: [ "Php"  ,"SQL"] },
+    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello", "PhpMyAdmin"] },
   ];
 
   return (
@@ -24,7 +24,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
               <Globe className="text-blue-600" size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Développement Frontend</h3>
@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
               <Code className="text-blue-600" size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Code propre</h3>
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
               <Database className="text-blue-600" size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-white">Intégration back-end</h3>
@@ -56,15 +56,15 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {skills.map((skillSet) => (
-            <div key={skillSet.category} className="bg-gray-800 rounded-lg p-6">
-              <h3 className="text-xl text-white font-semibold mb-4">
+            <div key={skillSet.category} className="bg-white rounded-lg p-6">
+              <h3 className="text-xl text-black font-semibold mb-4">
                 {skillSet.category}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {skillSet.items.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-white rounded-full text-sm text-gray-700 shadow-sm"
+                    className="px-3 py-1 bg-white rounded-full text-sm text-gray-700 shadow-lg hover:bg-blue-100 hover:text-gray-600  cursor-pointer"
                   >
                     {skill}
                   </span>

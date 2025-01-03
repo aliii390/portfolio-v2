@@ -95,10 +95,10 @@ const Projects = () => {
             {repos.map((repo) => (
               <article
                 key={repo.repo}
-                className=" bg-gradient-to-b from-gray-900 via-blue-950 to-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6  "
+                className=" bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6  "
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800">
+                  <h3 className="text-xl font-semibold text-white">
                     {repo.repo}
                   </h3>
                   <div className="flex items-center gap-2">
@@ -124,7 +124,7 @@ const Projects = () => {
 
                 {repo.language && (
                   <div className="mb-4">
-                    <span className="text-sm text-gray-600">
+                    <span className="text-sm text-white">
                       Codez en{" "}
                       <span className="font-semibold">{repo.language}</span>
                     </span>
@@ -136,9 +136,9 @@ const Projects = () => {
                     href={repo.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+                    className="flex items-center text-white hover:text-blue-600 transition-colors"
                   >
-                    <Github size={16} className="mr-1" />
+                    <Github size={16} className="mr-1 text-white" />
                     Code
                   </a>
                 </div>
