@@ -1,5 +1,5 @@
 // import React from "react";
-import aliImage from './image/ali.png';
+import aliImage from './image/pp.jpg';
 import { TypeAnimation } from "react-type-animation";
 import { ArrowDown } from "lucide-react";
 
@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-white"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-sky-950 via-gray-900 to-gray-800 "
     >
       <div className="container mx-auto px-4 py-20 text-center">
         <img
@@ -15,10 +15,10 @@ const Hero = () => {
           alt="Ali SAID ERRAHMANI"
           className="w-32 h-32 rounded-full mx-auto mb-8 shadow-lg"
         />
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-100 mb-4">
           Ali SAID ERRAHMANI
         </h1>
-        <div className="text-xl md:text-2xl text-gray-600 mb-8 h-8">
+        <div className="text-xl md:text-2xl text-slate-100 mb-8 h-8">
           <TypeAnimation
             sequence={[
               "Développeur Web Junior",
@@ -31,7 +31,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </div>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-slate-100 max-w-2xl mx-auto mb-12">
           Passionné par la création d'applications web à la fois esthétiques et
           fonctionnelles, je suis constamment en quête d'apprentissage et
           d'exploration de nouvelles technologies pour concevoir des solutions

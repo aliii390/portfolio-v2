@@ -74,12 +74,12 @@ const Projects = () => {
   // })
 
   return (
-    <section id="projects" className="py-20 bg-gray ">
+    <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl text-black md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl text-white md:text-4xl font-bold text-center mb-4">
           Mes projets
         </h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <p className="text-white text-center max-w-2xl mx-auto mb-12">
           Voici quelques-uns de mes récents projets. Tous ces éléments sont open
           source et disponibles sur GitHub.
         </p>
@@ -95,7 +95,7 @@ const Projects = () => {
             {repos.map((repo) => (
               <article
                 key={repo.repo}
-                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6  "
+                className=" bg-gradient-to-b from-gray-900 via-blue-950 to-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6  "
               >
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold text-gray-800">
@@ -110,7 +110,7 @@ const Projects = () => {
                 </div>
 
                 {/* partie image */}
-                <div className="w-full h-[250px] mb-3 border flex items-center justify-center overflow-hidden group relative">
+                <div className="w-full h-[250px] mb-3  flex items-center justify-center overflow-hidden group relative">
                   <a href={repo.website}>
                     <img
                       src={repo.image}
