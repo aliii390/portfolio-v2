@@ -7,7 +7,7 @@ const About = () => {
       category: "Frontend",
       items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
-    { category: "Backend", items: ["MySql", "PhpMyAdmin"  ,"SQL"] },
+    { category: "Backend", items: ["MySql", "PhpMyAdmin"  , "Php" ,"SQL"] },
     { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello"] },
   ];
 
@@ -22,13 +22,13 @@ const About = () => {
           acquises.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 ">
           <div className="text-center p-6">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Globe className="text-blue-600" size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Développement Frontend</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 ">
               En tant que développeur frontend débutant, je me spécialise dans
               la création d'interfaces utilisateur réactives et intuitives en
               utilisant les technologies web modernes.
@@ -52,7 +52,7 @@ const About = () => {
             Créer des API robustes et gérer des bases de données pour les applications full-stack
             </p>
           </div>
-        </div>
+        </section>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((skillSet) => (
