@@ -49,7 +49,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-600"
+            className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,29 +59,29 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4">
-            <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="#home" className="text-white hover:text-blue-600 transition-colors">
             Accueil
             </a>
-            <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="#about" className="text-white hover:text-blue-600 transition-colors">
               A Propos
             </a>
-            <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="#projects" className="text-white hover:text-blue-600 transition-colors">
               Projets
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <a href="#contact" className="text-white hover:text-blue-600 transition-colors">
               Contact
             </a>
             <div className="flex items-center gap-4 pt-4 border-t">
               <a href="https://github.com/aliii390" target="_blank" rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors">
+                className="text-white hover:text-blue-600 transition-colors">
                 <Github size={20} />
               </a>
               <a href="https://linkedin.com/in/ali-said-errahmani" target="_blank" rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors">
+                className="text-white hover:text-blue-600 transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="mailto:ali.said.errahmani@gmail.com"
-                className="text-gray-600 hover:text-blue-600 transition-colors">
+                className="text-white hover:text-blue-600 transition-colors">
                 <Mail size={20} />
               </a>
             </div>
