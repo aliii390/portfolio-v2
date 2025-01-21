@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin ,FileDown  } from 'lucide-react';
 
 
 const Contact = () => {
@@ -15,7 +15,13 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-md p-8 md:w-[90%] md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center ">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-4">
+              <div className='flex items-center'>
+              <FileDown className='text-blue-600 mr-4'/>
+              <a href=""> Mon CV</a>
+              </div>
+              
               <div className="flex items-center">
+               
                 <Mail className="text-blue-600 mr-4" size={24} />
                 <div>
                   <p className="font-medium">Email</p>

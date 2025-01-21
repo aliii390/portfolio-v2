@@ -21,38 +21,41 @@ const About = () => {
           Passionné par le développement web, voici les compétences que j'ai
           acquises.
         </p>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+  <div className="text-center p-6">
+    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
+      <Globe className="text-blue-600" size={32} />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-white">Développement Frontend</h3>
+    <p className="text-white">
+      En tant que développeur frontend débutant, je me spécialise dans la
+      création d'interfaces utilisateur simples et fonctionnelles, en utilisant
+      des technologies modernes.
+    </p>
+  </div>
+  <div className="text-center p-6">
+    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
+      <Code className="text-blue-600" size={32} />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-white">Apprentissage du Code</h3>
+    <p className="text-white">
+      En tant que débutant, je m'efforce de comprendre les bases du
+      développement tout en réalisant des projets simples pour améliorer mes
+      compétences.
+    </p>
+  </div>
+  <div className="text-center p-6">
+    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
+      <Database className="text-blue-600" size={32} />
+    </div>
+    <h3 className="text-xl font-semibold mb-2 text-white">Intégration Back-end</h3>
+    <p className="text-white">
+      Je découvre le développement back-end en réalisant des projets simples
+      avec PHP et MySQL, en me concentrant sur la gestion des bases de données.
+    </p>
+  </div>
+</section>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 ">
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
-              <Globe className="text-blue-600" size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Développement Frontend</h3>
-            <p className="text-white">
-              En tant que développeur frontend débutant, je me spécialise dans
-              la création d'interfaces utilisateur réactives et intuitives en
-              utilisant les technologies web modernes.
-            </p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
-              <Code className="text-blue-600" size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Code propre</h3>
-            <p className="text-white">
-            Rédaction de code maintenable, efficace et bien documenté selon les meilleures pratiques
-            </p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
-              <Database className="text-blue-600" size={32} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-white">Intégration back-end</h3>
-            <p className="text-white">
-            Créer des API robustes et gérer des bases de données pour les applications full-stack
-            </p>
-          </div>
-        </section>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {skills.map((skillSet) => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Github, Linkedin, Mail  } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail ,FileDown   } from 'lucide-react';
 
 
 const Header = () => {
@@ -41,6 +41,11 @@ const Header = () => {
                 className="text-slate-200 hover:text-blue-600 transition-colors">
                 <Mail size={20} />
               </a>
+              <a href="#"
+                className="text-white hover:text-blue-600 transition-colors">
+                <FileDown size={20} />
+              </a>
+              {/* ici rajoutez le cv */}
             </div>
           </nav>
 
@@ -83,6 +88,10 @@ const Header = () => {
               <a href="mailto:ali.said.errahmani@gmail.com"
                 className="text-white hover:text-blue-600 transition-colors">
                 <Mail size={20} />
+              </a>
+              <a href="mailto:ali.said.errahmani@gmail.com"
+                className="text-white hover:text-blue-600 transition-colors">
+                <FileDown size={20} />
               </a>
             </div>
           </nav>
