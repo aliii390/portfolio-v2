@@ -7,7 +7,7 @@ const About = () => {
       category: "Frontend",
       items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
-    { category: "Backend", items: [ "Php"  ,"SQL"] },
+    { category: "Backend", items: [ "Php"  ,"SQL", "Symfony"] },
     { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello" , "PhpMyAdmin"] },
   ];
 

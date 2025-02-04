@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
-import aliImage from "./image/ali.png";
 import freezeImage from "./image/freeze1.png";
 import aliPortfolioImage from "./image/test.png";
 import tpTailwind from "./image/tp-tailwind.jpg";
+import drump from "./image/drumpad.png";
+import qrcode from "./image/qrcode.png";
 
 
 // ExternalLink,
@@ -40,10 +41,19 @@ const Projects = () => {
 
           if (data.repo === "assistant-vocal") {
             data.image = freezeImage;
+             data.language = "Python"
           }
 
           if (data.repo === "QR-Code") {
-            data.image = tpTailwind;
+            data.image = qrcode;
+            data.language = "HTML CSS, JavaScript"
+            data.website = "https://aliii390.github.io/QR-Code/"
+          }
+
+          if (data.repo === "SoundBoard") {
+            data.image = drump;
+            data.language = "Javascript"
+            data.website = "https://aliii390.github.io/SoundBoard/"
           }
           
           if(data.repo === "TP-tailwindcss"){
