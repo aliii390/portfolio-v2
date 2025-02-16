@@ -26,7 +26,7 @@ const About = () => {
     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform">
       <Globe className="text-blue-600" size={32} />
     </div>
-    <h3 className="text-xl font-semibold mb-2 text-white">Développement Frontend</h3>
+    <h3 className="text-xl font-semibold mb-2 text-white">Développement Front-end</h3>
     <p className="text-white">
       En tant que développeur frontend débutant, je me spécialise dans la
       création d'interfaces utilisateur simples et fonctionnelles, en utilisant
