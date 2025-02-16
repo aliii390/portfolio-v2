@@ -5,6 +5,9 @@ import aliPortfolioImage from "./image/test.png";
 import tpTailwind from "./image/tp-tailwind.jpg";
 import drump from "./image/drumpad.png";
 import qrcode from "./image/qrcode.png";
+import book from "./image/bookm.png";
+import hasard from "./image/hasard.png";
+
 
 
 // ExternalLink,
@@ -19,6 +22,7 @@ interface Repository {
   languageColor: string;
   stars: number;
   forks: number;
+
 }
 
 const Projects = () => {
@@ -37,12 +41,18 @@ const Projects = () => {
           if (data.repo === "Ali-Portfolio") {
             data.image = aliPortfolioImage;
             data.website = "https://aliii390.github.io/Ali-Portfolio/";
+           
           }
 
-          if (data.repo === "assistant-vocal") {
-            data.image = freezeImage;
-             data.language = "Python"
-          }
+            if (data.repo === "assistant-vocal") {
+            // data.image = freezeImage;
+            data.language = "Python";
+            }
+            if (data.repo === "BookMarket-refacto") {
+            data.image = book;
+            data.language = "php";
+            }
+           
 
           if (data.repo === "QR-Code") {
             data.image = qrcode;
@@ -52,13 +62,19 @@ const Projects = () => {
 
           if (data.repo === "SoundBoard") {
             data.image = drump;
-            data.language = "Javascript"
+            data.language = "HTML CSS , Javascript"
             data.website = "https://aliii390.github.io/SoundBoard/"
           }
           
           if(data.repo === "TP-tailwindcss"){
             data.image = tpTailwind;
             data.website = " https://aliii390.github.io/TP-tailwindcss/";
+          }
+          if(data.repo === "hasar404"){
+            data.image = hasard;
+            data.website = " https://aliii390.github.io/TP-tailwindcss/";
+            data.language = "HTML CSS, Javascript";
+            data.website = "https://aliii390.github.io/hasar404/";
           }
 
         });
@@ -115,6 +131,7 @@ const Projects = () => {
                     <span className="flex items-center text-gray-600">
                       <Star size={16} className="mr-1" />
                       {repo.stars}
+                     
                     </span>
                   </div>
                 </div>
@@ -127,6 +144,7 @@ const Projects = () => {
                       alt=""
                       className="absolute top-0 left-0 w-full h-auto group-hover:animate-scroll"
                     />
+                    
                   </a>
                 </div>
 
@@ -135,9 +153,10 @@ const Projects = () => {
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-white">
-                      Codez en{" "}
+                      Codez en{" "} 
                       <span className="font-semibold">{repo.language}</span>
                     </span>
+                    
                   </div>
                 )}
 
