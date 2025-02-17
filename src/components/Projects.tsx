@@ -7,6 +7,7 @@ import drump from "./image/drumpad.png";
 import qrcode from "./image/qrcode.png";
 import book from "./image/bookm.png";
 import hasard from "./image/hasard.png";
+import luxury from "./image/luxury.png";
 
 
 
@@ -72,9 +73,13 @@ const Projects = () => {
           }
           if(data.repo === "hasar404"){
             data.image = hasard;
-            data.website = " https://aliii390.github.io/TP-tailwindcss/";
             data.language = "HTML CSS, Javascript";
             data.website = "https://aliii390.github.io/hasar404/";
+          }
+          if(data.repo === "LuxuryService"){
+            data.image = luxury;
+            data.language = "php avec le framework Symfony";
+           
           }
 
         });
