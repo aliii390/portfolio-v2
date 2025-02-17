@@ -1,6 +1,5 @@
 import  { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
-import freezeImage from "./image/freeze1.png";
 import aliPortfolioImage from "./image/test.png";
 import tpTailwind from "./image/tp-tailwind.jpg";
 import drump from "./image/drumpad.png";
@@ -23,6 +22,8 @@ interface Repository {
   languageColor: string;
   stars: number;
   forks: number;
+  description: string;
+  
 
 }
 
@@ -38,7 +39,7 @@ const Projects = () => {
         );
         const datas = await response.json();
 
-        datas.forEach((data) => {
+        datas.forEach((data: Repository) => {
           if (data.repo === "Ali-Portfolio") {
             data.image = aliPortfolioImage;
             data.website = "https://aliii390.github.io/Ali-Portfolio/";
@@ -154,11 +155,12 @@ const Projects = () => {
                 </div>
 
                 {/* && = if */}
-
+                <p className="text-white text-sm w-80">{repo.description}</p>
+                
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-white">
-                      Codez en{" "} 
+                    <span style={{ color: repo.languageColor }}>●</span>  Codez en{" "} 
                       <span className="font-semibold">{repo.language}</span>
                     </span>
                     
