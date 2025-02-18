@@ -1,4 +1,5 @@
 import { Mail, MapPin, Github, Linkedin , FileDown } from 'lucide-react';
+import cv from "./src/components/image/cv.pdf";
 
 export default function ContactSection() {
   return (
@@ -41,7 +42,7 @@ export default function ContactSection() {
                 <a href="https://www.linkedin.com/in/ali-said-errahmani-a41ba1295/" className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
                   <Linkedin className="h-6 w-6 text-white" />
                 </a>
-                <a href="./src/components/image/cv.pdf"  target='_blank' className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
+                <a href={cv}  target='_blank' className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
                     <FileDown className="h-6 w-6 text-white" />
                 </a>
               </div>
