@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, X, Github, Linkedin, Mail ,FileDown   } from 'lucide-react';
+import cv from './image/cv.pdf';
 
 
 const Header = () => {
@@ -41,7 +42,7 @@ const Header = () => {
                 className="text-slate-200 hover:text-blue-600 transition-colors">
                 <Mail size={20} />
               </a>
-              <a href="#"
+              <a href={cv}  target='_blank'
                 className="text-white hover:text-blue-600 transition-colors">
                 <FileDown size={20} />
               </a>
@@ -89,7 +90,7 @@ const Header = () => {
                 className="text-white hover:text-blue-600 transition-colors">
                 <Mail size={20} />
               </a>
-              <a href="mailto:ali.said.errahmani@gmail.com"
+              <a href={cv}  target='_blank'
                 className="text-white hover:text-blue-600 transition-colors">
                 <FileDown size={20} />
               </a>
