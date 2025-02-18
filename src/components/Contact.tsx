@@ -1,5 +1,5 @@
 import { Mail, MapPin, Github, Linkedin , FileDown } from 'lucide-react';
-import cv from "./src/components/image/cv.pdf";
+import cv from "./image/cv.pdf";
 
 export default function ContactSection() {
   return (
