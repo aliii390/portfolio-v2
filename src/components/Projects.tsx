@@ -80,7 +80,7 @@ const Projects = () => {
           }
           if(data.repo === "LuxuryService"){
             data.image = luxury;
-            data.language = "php avec le framework Symfony";
+            data.language = "Symfony";
            
           }
 
