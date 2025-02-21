@@ -52,7 +52,7 @@ const Projects = () => {
             }
             if (data.repo === "BookMarket-refacto") {
             data.image = book;
-            data.language = "php";
+            data.language = "Php";
             data.website = "https://ali-bookmarket.pro4.garage404.com/public/pageUn.php";
             }
            
