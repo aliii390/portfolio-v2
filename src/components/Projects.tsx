@@ -145,7 +145,7 @@ const Projects = () => {
 
                 {/* partie image */}
                 <div className="w-full h-[250px] mb-3  flex items-center justify-center overflow-hidden group relative">
-                  <a href={repo.website}>
+                  <a  target='_blank' href={repo.website}>
                     <img
                       src={repo.image}
                       alt=""
