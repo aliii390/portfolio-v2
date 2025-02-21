@@ -161,7 +161,7 @@ const Projects = () => {
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-white">
-                    <span style={{ color: repo.languageColor }}>●</span>  Codez en{" "} 
+                    <span style={{ color: repo.languageColor }}>●</span>{" "} 
                       <span className="font-semibold">{repo.language}</span>
                     </span>
                     
