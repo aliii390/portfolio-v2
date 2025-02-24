@@ -52,7 +52,7 @@ const Projects = () => {
             }
             if (data.repo === "BookMarket-refacto") {
             data.image = book;
-            data.language = "php";
+            data.language = "Php";
             data.website = "https://ali-bookmarket.pro4.garage404.com/public/pageUn.php";
             }
            
@@ -81,7 +81,10 @@ const Projects = () => {
           if(data.repo === "LuxuryService"){
             data.image = luxury;
             data.language = "Symfony";
+<<<<<<< HEAD
             data.website = "https://ali-luxury.pro4.garage404.com/";
+=======
+>>>>>>> c642a67b513e58ca0aa882b8ce479b165e67f656
            
           }
 
@@ -146,7 +149,7 @@ const Projects = () => {
 
                 {/* partie image */}
                 <div className="w-full h-[250px] mb-3  flex items-center justify-center overflow-hidden group relative">
-                  <a href={repo.website}>
+                  <a  target='_blank' href={repo.website}>
                     <img
                       src={repo.image}
                       alt=""
@@ -162,7 +165,7 @@ const Projects = () => {
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-white">
-                    <span style={{ color: repo.languageColor }}>●</span>  Codez en{" "} 
+                    <span style={{ color: repo.languageColor }}>●</span>{" "} 
                       <span className="font-semibold">{repo.language}</span>
                     </span>
                     
