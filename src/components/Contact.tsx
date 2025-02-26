@@ -36,10 +36,10 @@ export default function ContactSection() {
               </div>
 
               <div className="flex space-x-4 pt-4">
-                <a href="https://github.com/aliii390" className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
+                <a target='_blank' href="https://github.com/aliii390" className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
                   <Github className="h-6 w-6 text-white" />
                 </a>
-                <a href="https://www.linkedin.com/in/ali-said-errahmani-a41ba1295/" className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
+                <a target='_blank' href="https://www.linkedin.com/in/ali-said-errahmani-a41ba1295/" className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
                   <Linkedin className="h-6 w-6 text-white" />
                 </a>
                 <a href={cv}  target='_blank' className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
