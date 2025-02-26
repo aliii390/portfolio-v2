@@ -82,8 +82,6 @@ const Projects = () => {
             data.image = luxury;
             data.language = "Symfony";
             data.website = "https://ali-luxury.pro4.garage404.com";
-          
-           
           }
 
         });
