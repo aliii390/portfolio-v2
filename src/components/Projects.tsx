@@ -81,6 +81,8 @@ const Projects = () => {
           if(data.repo === "LuxuryService"){
             data.image = luxury;
             data.language = "Symfony";
+            data.website = "https://ali-luxury.pro4.garage404.com";
+          
            
           }
 
@@ -177,6 +179,7 @@ const Projects = () => {
                   >
                     <Github size={16} className="mr-1 text-white" />
                     Code
+                    
                   </a>
                 </div>
               </article>
