@@ -1,5 +1,5 @@
 // import React from "react";
-import aliImage from './image/pp.jpg';
+import aliImage from './image/alli.jpg';
 import { TypeAnimation } from "react-type-animation";
 import { ArrowDown } from "lucide-react";
 
