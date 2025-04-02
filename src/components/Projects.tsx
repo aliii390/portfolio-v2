@@ -1,14 +1,12 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
 import aliPortfolioImage from "./image/test.png";
 import tpTailwind from "./image/tp-tailwind.jpg";
 import drump from "./image/drumpad.png";
-import qrcode from "./image/qrcode.png";
+import chatbot from "./image/chatbot.png";
 import book from "./image/bookm.png";
 import hasard from "./image/hasard.png";
 import luxury from "./image/luxury.png";
-
-
 
 // ExternalLink,
 
@@ -23,8 +21,6 @@ interface Repository {
   stars: number;
   forks: number;
   description: string;
-  
-
 }
 
 const Projects = () => {
@@ -43,47 +39,46 @@ const Projects = () => {
           if (data.repo === "Ali-Portfolio") {
             data.image = aliPortfolioImage;
             data.website = "https://aliii390.github.io/Ali-Portfolio/";
-           
           }
 
-            if (data.repo === "assistant-vocal") {
-            // data.image = freezeImage;
-            data.language = "Python";
-            }
-            if (data.repo === "BookMarket-refacto") {
+          if (data.repo === "BookMarket-refacto") {
             data.image = book;
             data.language = "Php";
-            data.website = "https://ali-bookmarket.pro4.garage404.com/public/pageUn.php";
-            }
-           
+            data.website =
+              "https://ali-bookmarket.pro4.garage404.com/public/pageUn.php";
+            data.link = "https://github.com/aliii390/BookMarket-refacto";
+          }
 
-          if (data.repo === "QR-Code") {
-            data.image = qrcode;
-            data.language = "HTML CSS, JavaScript"
-            data.website = "https://aliii390.github.io/QR-Code/"
+          if (data.repo === "ChattBot") {
+            data.image = chatbot;
+            data.language = "HTML CSS, Python , Flask";
+            data.website = "https://github.com/aliii390/ChattBot";
           }
 
           if (data.repo === "SoundBoard") {
             data.image = drump;
-            data.language = "HTML CSS , Javascript"
-            data.website = "https://aliii390.github.io/SoundBoard/"
+            data.language = "HTML CSS , Javascript";
+            data.website = "https://aliii390.github.io/SoundBoard/";
+            data.link = "https://github.com/aliii390/SoundBoard";
           }
-          
-          if(data.repo === "TP-tailwindcss"){
+
+          if (data.repo === "TP-tailwindcss") {
             data.image = tpTailwind;
             data.website = " https://aliii390.github.io/TP-tailwindcss/";
+            data.link = "https://github.com/aliii390/TP-tailwindcss";
           }
-          if(data.repo === "hasar404"){
+          if (data.repo === "hasar404") {
             data.image = hasard;
             data.language = "HTML CSS, Javascript";
             data.website = "https://aliii390.github.io/hasar404/";
+            data.link = "https://github.com/aliii390/hasar404";
           }
-          if(data.repo === "LuxuryService"){
+          if (data.repo === "LuxuryService") {
             data.image = luxury;
             data.language = "Symfony";
             data.website = "https://ali-luxury.pro4.garage404.com";
+            data.link = "https://github.com/aliii390/LuxuryService";
           }
-
         });
 
         setRepos(datas);
@@ -107,7 +102,10 @@ const Projects = () => {
   // })
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 ">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 "
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl text-white md:text-4xl font-bold text-center mb-4">
           Mes projets
@@ -138,46 +136,42 @@ const Projects = () => {
                     <span className="flex items-center text-gray-600">
                       <Star size={16} className="mr-1" />
                       {repo.stars}
-                     
                     </span>
                   </div>
                 </div>
 
                 {/* partie image */}
                 <div className="w-full h-[250px] mb-3  flex items-center justify-center overflow-hidden group relative">
-                  <a  target='_blank' href={repo.website}>
+                  <a target="_blank" href={repo.website}>
                     <img
                       src={repo.image}
                       alt=""
                       className="absolute top-0 left-0 w-full h-auto group-hover:animate-scroll"
                     />
-                    
                   </a>
                 </div>
 
                 {/* && = if */}
                 <p className="text-white text-sm w-80">{repo.description}</p>
-                
+
                 {repo.language && (
                   <div className="mb-4">
                     <span className="text-sm text-white">
-                    <span style={{ color: repo.languageColor }}>●</span>{" "} 
+                      <span style={{ color: repo.languageColor }}>●</span>{" "}
                       <span className="font-semibold">{repo.language}</span>
                     </span>
-                    
                   </div>
                 )}
 
                 <div className="flex gap-4">
                   <a
-                    href={repo.website}
+                    href={repo.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-white hover:text-blue-600 transition-colors"
                   >
                     <Github size={16} className="mr-1 text-white" />
                     Code
-                    
                   </a>
                 </div>
               </article>
