@@ -7,15 +7,15 @@ const About = () => {
       category: "Frontend",
       items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
-    { category: "Backend", items: [ "Php"  ,"SQL", "Symfony"] },
-    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello" , "PhpMyAdmin" , "PostMan"] },
+    { category: "Backend", items: [ "Php"  ,"Python" ,"SQL", "Symfony" , "PostgreSQL"] },
+    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello" , "PhpMyAdmin" , "SQL Server" ,"PostMan"] },
   ];
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-800 via-blue-900 to-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-          A Propos De Moi
+         À propos de moi
         </h2>
         <p className="text-white text-center max-w-2xl mx-auto mb-12">
           Passionné par le développement web, voici les compétences que j'ai

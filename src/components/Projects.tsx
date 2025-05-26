@@ -49,7 +49,7 @@ const Projects = () => {
             data.link = "https://github.com/aliii390/BookMarket-refacto";
           }
 
-          if (data.repo === "ChattBot") {
+          if (data.repo === "ChatBot") {
             data.image = chatbot;
             data.language = "HTML CSS, Python , Flask";
             data.website = "https://github.com/aliii390/ChattBot";
@@ -67,7 +67,7 @@ const Projects = () => {
             data.website = " https://aliii390.github.io/TP-tailwindcss/";
             data.link = "https://github.com/aliii390/TP-tailwindcss";
           }
-          if (data.repo === "hasar404") {
+          if (data.repo === "Hasard404") {
             data.image = hasard;
             data.language = "HTML CSS, Javascript";
             data.website = "https://aliii390.github.io/hasar404/";

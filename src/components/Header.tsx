@@ -21,7 +21,7 @@ const Header = () => {
             Accueil
             </a>
             <a href="#about" className="text-slate-200 hover:text-blue-600 transition-colors">
-              A Propos
+              À propos
             </a>
             <a href="#projects" className="text-slate-200 hover:text-blue-600 transition-colors">
               Projets
