@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
 import aliPortfolioImage from "./image/test.png";
-import tpTailwind from "./image/tp-tailwind.jpg";
+import tpMeteo from "./image/meteo.png";
 import drump from "./image/drumpad.png";
 import chatbot from "./image/chatbot.png";
 import book from "./image/bookm.png";
@@ -62,8 +62,8 @@ const Projects = () => {
             data.link = "https://github.com/aliii390/SoundBoard";
           }
 
-          if (data.repo === "TP-tailwindcss") {
-            data.image = tpTailwind;
+          if (data.repo === "tp-meteo") {
+            data.image = tpMeteo;
             data.website = " https://aliii390.github.io/TP-tailwindcss/";
             data.link = "https://github.com/aliii390/TP-tailwindcss";
           }
