@@ -64,8 +64,8 @@ const Projects = () => {
 
           if (data.repo === "tp-meteo") {
             data.image = tpMeteo;
-            data.website = " https://aliii390.github.io/TP-tailwindcss/";
-            data.link = "https://github.com/aliii390/TP-tailwindcss";
+            data.website = "https://tp-meteo.vercel.app/";
+            data.link = "https://github.com/aliii390/tp-meteo";
           }
           if (data.repo === "Hasard404") {
             data.image = hasard;
