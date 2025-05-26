@@ -8,7 +8,7 @@ const About = () => {
       items: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
     { category: "Backend", items: [ "Php"  ,"Python" ,"SQL", "Symfony" , "PostgreSQL"] },
-    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello" , "PhpMyAdmin" , "SQL Server" ,"PostMan"] },
+    { category: "Tools", items: ["Git", "VS Code",  "Figma" , "Github" , "Trello" , "PhpMyAdmin" , "SQL Server" , "PgAdmin","PostMan"] },
   ];
 
   return (
