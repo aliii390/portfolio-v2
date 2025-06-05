@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Github, Star } from "lucide-react";
 import aliPortfolioImage from "./image/test.png";
-import tpTailwind from "./image/tp-tailwind.jpg";
+import tpMeteo from "./image/meteo.png";
 import drump from "./image/drumpad.png";
 import chatbot from "./image/chatbot.png";
 import book from "./image/bookm.png";
@@ -49,7 +49,7 @@ const Projects = () => {
             data.link = "https://github.com/aliii390/BookMarket-refacto";
           }
 
-          if (data.repo === "ChattBot") {
+          if (data.repo === "ChatBot") {
             data.image = chatbot;
             data.language = "HTML CSS, Python , Flask";
             data.website = "https://github.com/aliii390/ChattBot";
@@ -62,12 +62,12 @@ const Projects = () => {
             data.link = "https://github.com/aliii390/SoundBoard";
           }
 
-          if (data.repo === "TP-tailwindcss") {
-            data.image = tpTailwind;
-            data.website = " https://aliii390.github.io/TP-tailwindcss/";
-            data.link = "https://github.com/aliii390/TP-tailwindcss";
+          if (data.repo === "tp-meteo") {
+            data.image = tpMeteo;
+            data.website = "https://tp-meteo.vercel.app/";
+            data.link = "https://github.com/aliii390/tp-meteo";
           }
-          if (data.repo === "hasar404") {
+          if (data.repo === "Hasard404") {
             data.image = hasard;
             data.language = "HTML CSS, Javascript";
             data.website = "https://aliii390.github.io/hasar404/";
