@@ -4,6 +4,7 @@ import cv from "./image/cv.pdf";
 export default function ContactSection() {
   return (
     <div className="min-h-[70vh] bg-gradient-to-b from-gray-900 via-gray-850 to-gray-900 py-8 px-6 sm:px-8 lg:px-16">
+      
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 sm:mb-14 space-y-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
@@ -45,11 +46,13 @@ export default function ContactSection() {
                 <a href={cv}  target='_blank' className="p-2 bg-white/5 rounded-full hover:bg-purple-400/20 transition-colors">
                     <FileDown className="h-6 w-6 text-white" />
                 </a>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
   );
 }

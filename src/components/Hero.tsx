@@ -5,10 +5,12 @@ import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
+    
     <section
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-to-b from-sky-950 via-gray-900 to-gray-800 "
     >
+    
       <div className="container mx-auto px-4 py-20 text-center">
         <img
         src={aliImage}
@@ -51,6 +53,7 @@ const Hero = () => {
           Contact
           </a>
         </div>
+     
         <a
           href="#about"
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
